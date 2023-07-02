@@ -3,10 +3,10 @@
     class="h-[722px] bg-[url('~/assets/images/bg.svg')] bg-cover bg-no-repeat flex items-center justify-center flex-col"
   >
     <div class="max-w-[800px] text-center px-10">
-      <h1 class="text-gray-50 font-bold text-5xl sm:text-6xl mb-4">
+      <h1 class="text-gray-50 font-bold text-5xl sm:text-6xl mb-4 focus-in-expand">
         Redefining your real estate journey
       </h1>
-      <h2 class="text-gray-100 text-lg font-normal mb-20 max-w-[600px] mx-auto">
+      <h2 class="text-gray-100 text-lg font-normal mb-20 max-w-[600px] mx-auto focus-in-expand">
         Join FutureSpace today to experience a new era of property management
         and house hunting
       </h2>

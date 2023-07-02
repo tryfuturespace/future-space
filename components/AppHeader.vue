@@ -6,12 +6,20 @@
   >
     <div class="flex justify-between items-center container">
       <NuxtLink to="/"
-        ><img
+        >
+        <img
           src="~/assets/images/logo.png"
-          class="w-[145px] h-[45px]"
+          class="w-[145px] h-[45px] hidden sm:inline-block"
           width="145"
           height="45"
-      /></NuxtLink>
+      />
+      <img
+          src="~/assets/images/icon.png"
+          class="w-[32px] h-auto sm:hidden"
+          width="32"
+          height="36"
+      />
+   </NuxtLink>
       <ul class="flex gap-x-4">
         <li>
           <font-awesome-icon
