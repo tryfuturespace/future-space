@@ -9,13 +9,13 @@
         tour than they are with 2D imagery.
       </p>
 
-      <div class="h-[500px]" data-aos="zoom-in" data-aos-once="false">
+      <div class="h-[550px]" data-aos="zoom-in" data-aos-once="false">
         <img
           alt=""
-          src="~/assets/images/bg.svg"
+          src="~/assets/images/prop.webp"
           width="1000"
-          height="500"
-          class="w-full h-full object-cover"
+          height="550"
+          class="w-full h-full object-contain"
         />
       </div>
     </div>
