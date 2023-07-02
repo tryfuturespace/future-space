@@ -1,0 +1,43 @@
+<template>
+  <section class="px-6 py-20">
+    <div class="container">
+      <h2 class="text-center text-gray-700 text-4xl font-bold mb-4">
+        Kindly witness it firsthand.
+      </h2>
+      <p class="max-w-[500px] mb-10 text-gray-500 text-center text-sm mx-auto">
+        Viewers are shown to be 300% more engaged with a future space 3D virtual
+        tour than they are with 2D imagery.
+      </p>
+
+      <div class="h-[500px]">
+        <img
+          alt=""
+          src="~/assets/images/bg.svg"
+          width="1000"
+          height="500"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+</template>
+<script setup>
+import Icon from "~/assets/images/hand.svg";
+const content = [
+  {
+    title: "Online payment",
+    text: "Guests can easily make payments online, 24/7. This saves you time and money on processing fees.",
+    img: Icon,
+  },
+  {
+    title: "Online payment",
+    text: "Guests can easily make payments online, 24/7. This saves you time and money on processing fees.",
+    img: Icon,
+  },
+  {
+    title: "Online payment",
+    text: "Guests can easily make payments online, 24/7. This saves you time and money on processing fees.",
+    img: Icon,
+  },
+];
+</script>
