@@ -1,7 +1,7 @@
 <template>
   <section class="px-6 py-20">
     <div class="container grid lg:grid-cols-2 h-full gap-x-4">
-      <div class="relative p-3 order-2 lg:order-1">
+      <div class="relative p-3 order-2 lg:order-1" data-aos="zoom-in" data-aos-once="false">
         <img
           :src="content.data[indexes].img"
           alt="image"

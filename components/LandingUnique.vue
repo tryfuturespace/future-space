@@ -1,11 +1,11 @@
 <template>
   <section class="px-6 py-20">
     <div class="container">
-      <h2 class="text-center text-gray-700 text-4xl font-bold mb-14">
+      <h2 class="text-center text-gray-700 text-4xl font-bold mb-14" data-aos="fade-up" data-aos-once="false">
         What makes us unique?
       </h2>
 
-      <div class="flex flex-col lg:flex-row gap-10 justify-center">
+      <div class="flex flex-col lg:flex-row gap-10 justify-center" data-aos="fade-up" data-aos-once="false">
         <div
           v-for="n in content"
           :key="n"

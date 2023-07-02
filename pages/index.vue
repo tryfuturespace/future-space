@@ -7,6 +7,13 @@
   <LandingWitness />
 </template>
 <script setup>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+onMounted(() => {
+  AOS.init()
+})
+
 useHead({
   title: "FutureSpace |  Redefining your real estate journey",
   meta: [
