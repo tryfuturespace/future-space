@@ -1,14 +1,14 @@
 <template>
-  <div class="lg:px-10 lg:py-10">
-    <h3 class="text-3xl font-medium mb-2 text-gray-700" data-aos="fade-up" data-aos-once="false">{{ content.title }}</h3>
-    <p class="mb-10 text-[15px] text-gray-500" data-aos="fade-up" data-aos-once="false">{{ content.text }}</p>
+  <div class="lg:px-10 lg:py-10" data-aos="fade-up" data-aos-once="false">
+    <h3 class="text-3xl font-medium mb-2 text-gray-700" >{{ content.title }}</h3>
+    <p class="mb-10 text-[15px] text-gray-500" >{{ content.text }}</p>
     <div>
       <div
         v-for="(n, idx) in content.data"
         :class="`${
           indexes === idx ? 'shadow-[0px_3px_8px_0px_rgba(0,0,0,0.1)]' : ''
         }  rounded-lg p-4 mb-4`"
-        data-aos="fade-up" data-aos-once="false"
+       
       >
         <div
           :class="`flex justify-between items-center ${

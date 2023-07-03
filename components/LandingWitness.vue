@@ -23,14 +23,23 @@
         id="viewer"
         class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
       ></div>
+      <!-- <div
+        data-aos="zoom-in"
+        data-aos-once="false"
+        id="panorama"
+        class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
+      ></div> -->
     </div>
   </section>
 </template>
 <script setup>
 import { Viewer } from "@photo-sphere-viewer/core";
 import Image from "~/assets/images/property.png";
+import Image1 from "~/assets/images/prop.png";
+import Image2 from "~/assets/images/prop2.png";
 
 const viewer = ref(null);
+const parabellum = ref(null);
 onBeforeMount(() => {
   viewer.value = new Viewer({
     container: document.querySelector("#viewer"),
@@ -47,5 +56,51 @@ onBeforeMount(() => {
       poseRoll: 0, // -180 to 180
     },
   });
+  // parabellum.value = pannellum.viewer("panorama", {
+  //   default: {
+  //     firstScene: "circle",
+  //     author: "Matthew Petroff",
+  //     sceneFadeDuration: 1000,
+  //   },
+
+  //   scenes: {
+  //     circle: {
+  //       title: "Mason Circle",
+  //       hfov: 110,
+  //       pitch: -3,
+  //       yaw: 117,
+  //       type: "equirectangular",
+  //       panorama: Image,
+  //       hotSpots: [
+  //         {
+  //           pitch: -2.1,
+  //           yaw: 132.9,
+  //           type: "scene",
+  //           text: "Spring House or Dairy",
+  //           sceneId: "house",
+  //         },
+  //       ],
+  //     },
+
+  //     house: {
+  //       title: "Spring House or Dairy",
+  //       hfov: 110,
+  //       yaw: 5,
+  //       type: "equirectangular",
+  //       panorama:Image1,
+  //       hotSpots: [
+  //         {
+  //           pitch: -0.6,
+  //           yaw: 37.1,
+  //           type: "scene",
+  //           text: "Mason Circle",
+  //           sceneId: "circle",
+  //           targetYaw: -23,
+  //           targetPitch: 2,
+  //         },
+  //       ],
+  //     },
+  //   },
+  // });
 });
 </script>

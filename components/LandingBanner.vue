@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-[722px] bg-[url('~/assets/images/bg.svg')] bg-cover bg-no-repeat flex items-center justify-center flex-col"
+    class="h-[722px] bg-gray-400 bg-[url('~/assets/images/bg.svg')] bg-cover bg-no-repeat flex items-center justify-center flex-col"
   >
     <div class="max-w-[800px] text-center px-10 scale-in-center">
       <h1 class="text-gray-200 font-bold text-5xl sm:text-6xl mb-4">

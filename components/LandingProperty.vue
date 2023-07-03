@@ -7,8 +7,8 @@
           :src="content.data[indexes].img"
           alt="image"
           width="500"
-          height="700"
-          class="w-full h-[400px] lg:h-[700px] relative z-10 rounded-lg object-cover"
+          height="600"
+          class="w-full h-[400px] lg:h-[600px] relative z-10 rounded-lg object-cover"
         />
         <div
           class="absolute bg-[rgba(10,222,148,1)] w-40 h-40 rounded-tl-lg top-0 left-0"

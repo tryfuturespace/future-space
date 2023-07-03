@@ -1,9 +1,11 @@
 <template>
-  <footer class="bg-[rgba(33,35,50)] px-6 py-20">
+  <footer
+    class="bg-[rgba(33,35,50)] px-6 py-20"
+    data-aos="fade-up"
+    data-aos-once="false"
+  >
     <div class="container">
       <button
-        data-aos="fade-up"
-        data-aos-once="false"
         class="mb-10 w-[256px] h-[46px] mx-auto relative active:scale-95 outline-none block group transition-all duration-300"
       >
         <div
@@ -16,19 +18,13 @@
         ></div>
       </button>
       <p
-        data-aos="fade-up"
-        data-aos-once="false"
         class="max-w-[380px] text-sm lg:text-lg text-center mx-auto text-gray-400 mb-6"
       >
         Join FutureSpace today to experience a new era of property management
         and house hunting!
       </p>
       <div class="mx-auto mb-10">
-        <ul
-          data-aos="fade-up"
-          data-aos-once="false"
-          class="flex gap-x-6 justify-center"
-        >
+        <ul class="flex gap-x-6 justify-center">
           <li>
             <font-awesome-icon
               icon="fa-brands fa-linkedin-in"
@@ -47,18 +43,14 @@
         </ul>
       </div>
       <div class="flex items-center justify-between flex-col lg:flex-row gap-6">
-        <NuxtLink to="/" data-aos="fade-up" data-aos-once="false"
+        <NuxtLink to="/"
           ><img
             src="~/assets/images/logo.png"
             class="w-[145px] h-[45px]"
             width="145"
             height="45"
         /></NuxtLink>
-        <span
-          data-aos="fade-up"
-          data-aos-once="false"
-          class="block text-gray-400 text-sm"
-        >
+        <span class="block text-gray-400 text-sm">
           &copy; {{ new Date().getFullYear() }} FutureSpace inc. All rights
           reserved
         </span>
