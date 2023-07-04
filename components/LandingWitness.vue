@@ -17,90 +17,103 @@
         tour than they are with 2D imagery.
       </p>
 
-      <div
+      <!-- <div
         data-aos="zoom-in"
         data-aos-once="true"
         id="viewer"
         class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
-      ></div>
-      <!-- <div
+      ></div> -->
+      <div
         data-aos="zoom-in"
         data-aos-once="true"
         id="panorama"
-        class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
-      ></div> -->
+        class="w-full h-[400px] mx-auto max-w-[800px]"
+      ></div>
     </div>
   </section>
 </template>
 <script setup>
 import { Viewer } from "@photo-sphere-viewer/core";
 import Image from "~/assets/images/property.png";
-import Image1 from "~/assets/images/prop.png";
-import Image2 from "~/assets/images/prop2.png";
+import Sitting from "~/assets/images/sitting.png";
+import Kitchen from "~/assets/images/kitchen.png";
 
 const viewer = ref(null);
 const parabellum = ref(null);
 onBeforeMount(() => {
-  viewer.value = new Viewer({
-    container: document.querySelector("#viewer"),
-    panorama: Image,
-    panoData: {
-      fullWidth: 2280,
-      fullHeight: 1164,
-      croppedWidth: 2280,
-      croppedHeight: 1164,
-      croppedX: 24,
-      croppedY: 0,
-      poseHeading: 0, // 0 to 360
-      posePitch: 0, // -90 to 90
-      poseRoll: 0, // -180 to 180
-    },
-  });
-  // parabellum.value = pannellum.viewer("panorama", {
-  //   default: {
-  //     firstScene: "circle",
-  //     author: "Matthew Petroff",
-  //     sceneFadeDuration: 1000,
-  //   },
-
-  //   scenes: {
-  //     circle: {
-  //       title: "Mason Circle",
-  //       hfov: 110,
-  //       pitch: -3,
-  //       yaw: 117,
-  //       type: "equirectangular",
-  //       panorama: Image,
-  //       hotSpots: [
-  //         {
-  //           pitch: -2.1,
-  //           yaw: 132.9,
-  //           type: "scene",
-  //           text: "Spring House or Dairy",
-  //           sceneId: "house",
-  //         },
-  //       ],
-  //     },
-
-  //     house: {
-  //       title: "Spring House or Dairy",
-  //       hfov: 110,
-  //       yaw: 5,
-  //       type: "equirectangular",
-  //       panorama:Image1,
-  //       hotSpots: [
-  //         {
-  //           pitch: -0.6,
-  //           yaw: 37.1,
-  //           type: "scene",
-  //           text: "Mason Circle",
-  //           sceneId: "circle",
-  //           targetYaw: -23,
-  //           targetPitch: 2,
-  //         },
-  //       ],
-  //     },
+  // viewer.value = new Viewer({
+  //   container: document.querySelector("#viewer"),
+  //   panorama: Image,
+  //   panoData: {
+  //     fullWidth: 2280,
+  //     fullHeight: 1164,
+  //     croppedWidth: 2280,
+  //     croppedHeight: 1164,
+  //     croppedX: 24,
+  //     croppedY: 0,
+  //     poseHeading: 0, // 0 to 360
+  //     posePitch: 0, // -90 to 90
+  //     poseRoll: 0, // -180 to 180
   //   },
   // });
+  parabellum.value = pannellum.viewer("panorama", {
+    autoLoad: true,
+    hotSpotDebug: false,
+    default: {
+      firstScene: "sitting",
+      sceneFadeDuration: 1000,
+    },
+
+    scenes: {
+      sitting: {
+        title: "Sitting room",
+        hfov: 110,
+        pitch: -3,
+        yaw: 117,
+        type: "equirectangular",
+        panorama: Sitting,
+        hotSpots: [
+          {
+            pitch: 32.51359419587959,
+            yaw: 73.31898451120176,
+            cssClass: "custom-hotspot",
+            type: "scene",
+            text: "Kitchen",
+            sceneId: "kitchen",
+            
+          },
+        ],
+      },
+      // Pitch: 32.51359419587959, Yaw: 73.31898451120176, Center Pitch: 38.65361875219251, Center Yaw: 56.117326749209305, HFOV: 110
+      kitchen: {
+        title: "Kitchen",
+        hfov: 120,
+        yaw: 5,
+        type: "equirectangular",
+        panorama: Kitchen,
+        hotSpots: [
+          {
+            pitch: -0.4217384420504516,
+            yaw: -165.663568683694,
+            cssClass: "custom-hotspot",
+            type: "scene",
+            text: "Sitting",
+            sceneId: "sitting",
+            targetYaw: -23,
+            targetPitch: 2,
+          },
+        ],
+      },
+    },
+  });
 });
 </script>
+<style>
+.custom-hotspot {
+  height: 40px;
+  width: 40px;
+  background: white;
+  border: 5px solid rgba(10, 222, 148, 1);
+  border-radius: 50%;
+}
+</style>
