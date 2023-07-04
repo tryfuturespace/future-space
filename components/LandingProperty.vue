@@ -2,13 +2,13 @@
   <section class="px-6 py-20">
     <div class="container grid lg:grid-cols-2 gap-x-4 h-full">
       <AppCard :content="content" />
-      <div class="relative p-3" data-aos="zoom-in" data-aos-once="false">
+      <div class="relative p-3" data-aos="zoom-in" data-aos-once="true">
         <img
           :src="content.data[indexes].img"
           alt="image"
           width="500"
-          height="600"
-          class="w-full h-[400px] lg:h-[600px] relative z-10 rounded-lg object-cover"
+          height="700"
+          class="w-full h-[400px] lg:h-[700px] relative z-10 rounded-lg object-cover"
         />
         <div
           class="absolute bg-[rgba(10,222,148,1)] w-40 h-40 rounded-tl-lg top-0 left-0"

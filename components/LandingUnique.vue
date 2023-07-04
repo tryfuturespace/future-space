@@ -1,15 +1,15 @@
 <template>
   <section class="px-6 py-20">
     <div class="container">
-      <h2 class="text-center text-gray-700 text-4xl font-bold mb-14" data-aos="fade-up" data-aos-once="false">
+      <h2 class="text-center text-gray-700 text-4xl font-bold mb-14" data-aos="fade-up" data-aos-once="true">
         What makes us unique?
       </h2>
 
-      <div class="flex flex-col lg:flex-row gap-10 justify-center" data-aos="fade-up" data-aos-once="false">
+      <div class="flex flex-col lg:flex-row gap-10 justify-center" data-aos="fade-up" data-aos-once="true">
         <div
           v-for="n in content"
           :key="n"
-          class="p-8 lg:p-10 rounded-xl bg-white shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] w-full max-w-[345px] mx-auto"
+          class="p-8 lg:p-10 rounded-xl bg-white shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] max-w-[345px] mx-auto lg:mx-0"
         >
           <img
             alt=""

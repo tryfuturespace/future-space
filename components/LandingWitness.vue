@@ -4,14 +4,14 @@
       <h2
         class="text-center text-gray-700 text-4xl font-bold mb-4"
         data-aos="fade-up"
-        data-aos-once="false"
+        data-aos-once="true"
       >
         Kindly witness it firsthand.
       </h2>
       <p
         class="max-w-[500px] mb-10 text-gray-500 text-center text-sm mx-auto"
         data-aos="fade-up"
-        data-aos-once="false"
+        data-aos-once="true"
       >
         Viewers are shown to be 300% more engaged with a future space 3D virtual
         tour than they are with 2D imagery.
@@ -19,13 +19,13 @@
 
       <div
         data-aos="zoom-in"
-        data-aos-once="false"
+        data-aos-once="true"
         id="viewer"
         class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
       ></div>
       <!-- <div
         data-aos="zoom-in"
-        data-aos-once="false"
+        data-aos-once="true"
         id="panorama"
         class="w-full h-[400px] sm:h-[600px] mx-auto max-w-[1000px]"
       ></div> -->

@@ -1,22 +1,22 @@
 <template>
-  <div class="lg:px-10 lg:py-10" data-aos="fade-up" data-aos-once="false">
+  <div class="lg:px-10 lg:py-10" data-aos="fade-up" data-aos-once="true">
     <h3 class="text-3xl font-medium mb-2 text-gray-700" >{{ content.title }}</h3>
     <p class="mb-10 text-[15px] text-gray-500" >{{ content.text }}</p>
     <div>
       <div
         v-for="(n, idx) in content.data"
         :class="`${
-          indexes === idx ? 'shadow-[0px_3px_8px_0px_rgba(0,0,0,0.1)]' : ''
-        }  rounded-lg p-4 mb-4`"
+          indexes === idx ? 'shadow-[0px_3px_8px_0px_rgba(0,0,0,0.1)] min-h-[160px]' : ''
+        }  rounded-lg p-6 mb-4 cursor-pointer `"
        
       >
-        <div
-          :class="`flex justify-between items-center ${
-            indexes === idx ? 'mb-4' : ''
+        <div @mouseenter="handleIndex(idx)"
+          :class="`flex justify-between mb-3 items-center transition-all duration-300 ${
+            indexes === idx ? '' : ''
           }`"
         >
-          <h5 class="text-[15px] font-medium">{{ n.title }}</h5>
-          <button @click="handleIndex(idx)">
+          <h5 class="text-xl font-medium">{{ n.title }}</h5>
+          <button >
             <font-awesome-icon
               v-if="indexes === idx"
               icon="fa-solid fa-minus"
@@ -29,8 +29,8 @@
             />
           </button>
         </div>
-        <div v-if="indexes === idx" class="transition-all duration-500">
-          <p class="text-sm text-gray-500">
+        <div v-show="indexes === idx" class="transition-all duration-300">
+          <p class="text-base text-[#373F41]">
             {{ n.text }}
           </p>
         </div>

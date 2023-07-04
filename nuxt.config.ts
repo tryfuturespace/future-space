@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/tailwind.css',
+    '~/assets/font/stylesheet.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@photo-sphere-viewer/core/index.css'
   ],

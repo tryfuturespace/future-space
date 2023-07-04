@@ -2,7 +2,7 @@
   <footer
     class="bg-[rgba(33,35,50)] px-6 py-20"
     data-aos="fade-up"
-    data-aos-once="false"
+    data-aos-once="true"
   >
     <div class="container">
       <button
